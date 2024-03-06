@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+   
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+  }
+}
+
+/* body{
+    background-color: #101010;
+    color : #FFD28E;
+    
+}
+p{
+    color: white;
+} */
