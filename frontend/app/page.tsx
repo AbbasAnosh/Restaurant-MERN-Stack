@@ -2,6 +2,7 @@ import AboutUs from "@/components/AboutUs";
 import Description from "@/components/Description";
 import Featured from "@/components/Featured";
 import Offer from "@/components/Offer";
+import SepecialMenu from "@/components/SepecialMenu";
 import Slider from "@/components/Slider";
 import Image from "next/image";
 
@@ -11,8 +12,9 @@ export default function Home() {
       <Slider />
       <AboutUs />
       <Featured />
-      <Description/>
-      <Offer/>
+      <Description />
+      {/* <Offer /> */}
+      <SepecialMenu />
     </main>
   );
 }

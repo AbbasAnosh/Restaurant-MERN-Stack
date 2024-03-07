@@ -33,7 +33,7 @@ const CartPage = () => {
                       </div>
                       <div>
                         <p className="text-md font-bold text-[#333]">
-                          Black T-Shirt
+                          Margherita Pizza
                         </p>
                         <button
                           type="button"
@@ -48,7 +48,7 @@ const CartPage = () => {
                     <div className="flex divide-x border w-max">
                       <button
                         type="button"
-                        className="bg-gray-100 px-4 py-2 font-semibold"
+                        className="bg-red-500 text-white px-4 py-2 font-semibold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const CartPage = () => {
                       </button>
                       <button
                         type="button"
-                        className="bg-gray-800 text-white px-4 py-2 font-semibold"
+                        className="bg-red-500 text-white px-4 py-2 font-semibold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const CartPage = () => {
                       </div>
                       <div>
                         <p className="text-md font-bold text-[#333]">
-                          Gray T-Shirt
+                          Neapolitan Pizza
                         </p>
                         <button
                           type="button"
@@ -114,7 +114,7 @@ const CartPage = () => {
                     <div className="flex divide-x border w-max">
                       <button
                         type="button"
-                        className="bg-gray-100 px-4 py-2 font-semibold"
+                        className="bg-red-500 text-white px-4 py-2 font-semibold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ const CartPage = () => {
                       </button>
                       <button
                         type="button"
-                        className="bg-gray-800 text-white px-4 py-2 font-semibold"
+                        className="bg-red-500 text-white px-4 py-2 font-semibold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@ const CartPage = () => {
                       </div>
                       <div>
                         <p className="text-md font-bold text-[#333]">
-                          Black T-Shirt
+                          Greek Pizza
                         </p>
                         <button
                           type="button"
@@ -180,7 +180,7 @@ const CartPage = () => {
                     <div className="flex divide-x border w-max">
                       <button
                         type="button"
-                        className="bg-gray-100 px-4 py-2 font-semibold"
+                        className="bg-red-500 px-4 py-2 text-white font-semibold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +201,7 @@ const CartPage = () => {
                       </button>
                       <button
                         type="button"
-                        className="bg-gray-800 text-white px-4 py-2 font-semibold"
+                        className="bg-red-500 text-white px-4 py-2 font-semibold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -240,12 +240,12 @@ const CartPage = () => {
               Delivery Cost <span className="ml-auto font-bold">$4.00</span>
             </li>
             <li className="flex flex-wrap gap-4 text-md py-4 font-bold">
-              TOTAL(INCL. VAT) <span className="ml-auto">$45.00</span>
+              TOTAL <span className="ml-auto">$45.00</span>
             </li>
           </ul>
           <button
             type="button"
-            className="mt-6 text-md px-6 py-2.5 w-full bg-blue-600 hover:bg-blue-700 text-white rounded"
+            className="mt-6 text-md px-6 py-2.5 w-full bg-red-500 hover:bg-red-600 text-white rounded"
           >
             Checkout
           </button>

@@ -10,10 +10,10 @@ const Navbar = () => {
   return (
     <div className="h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-20 xl:px-40">
       <div>
-        <Link href="/" className="text-xl md:font-bold md:text-center">
-          {/* <div className='w-8 h-8 absolute -left-5' >
-        <Image src="/yummy.png" alt='' fill/>
-       </div> */}
+        <Link
+          href="/"
+          className="text-xl md:font-bold md:text-center font-[font-alt]"
+        >
           YUMMY
         </Link>
       </div>

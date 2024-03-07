@@ -32,7 +32,7 @@ const CategoryPage = () => {
                 alt=""
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-red-300 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-300 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col gap-3 items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 mb-7 ">
               <h1 className="font-dmserif text-2xl font-bold text-white">
                 {item.title}
