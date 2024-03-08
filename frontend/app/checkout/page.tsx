@@ -7,7 +7,10 @@ const CheckoutPage = () => {
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 h-full">
         <div className="bg-[#3f3f3f] lg:h-screen lg:sticky lg:top-0">
           <div className="relative h-full">
-            <div className="p-8 lg:overflow-auto lg:h-[calc(100vh-60px)]">
+            <div
+              className="p-8 lg:overflow-auto scrollbar-thin hover:scrollbar-thumb-sky-500
+             scrollbar-thumb-yellow scrollbar-track-golden lg:h-[calc(100vh-60px)]"
+            >
               <h2 className="text-2xl font-bold font-font-base text-white">
                 Order Summary
               </h2>
@@ -205,13 +208,13 @@ const CheckoutPage = () => {
               <div className="flex gap-6 max-sm:flex-col mt-10">
                 <button
                   type="button"
-                  className="rounded-md px-6 py-3 w-full text-sm font-semibold bg-transparent bg-yellow hover:bg-red border-2 text-white"
+                  className="rounded-md px-6 py-3 w-full text-sm font-semibold font-font-alt bg-transparent bg-yellow hover:bg-red border-2 text-white"
                 >
                   Cancel
                 </button>
                 <button
                   type="button"
-                  className="rounded-md px-6 py-3 w-full text-sm font-semibold bg-red text-white hover:bg-yellow"
+                  className="rounded-md px-6 py-3 w-full text-sm font-font-alt font-semibold bg-red text-white hover:bg-yellow"
                 >
                   Complete Purchase
                 </button>

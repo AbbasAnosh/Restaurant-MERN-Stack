@@ -33,6 +33,8 @@ const config: Config = {
       white: '#FFFFFF'
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };
 export default config;
