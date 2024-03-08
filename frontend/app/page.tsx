@@ -13,8 +13,8 @@ export default function Home() {
       <AboutUs />
       <Featured />
       <Description />
-      {/* <Offer /> */}
       <SepecialMenu />
+      <Offer />
     </main>
   );
 }

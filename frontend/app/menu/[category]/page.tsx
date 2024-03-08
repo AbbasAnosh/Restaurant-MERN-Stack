@@ -6,11 +6,13 @@ import React from "react";
 
 const CategoryPage = () => {
   return (
-    <div className="m-4">
+    <div className="m-6">
       <div className="mb-12">
-        <h1 className="text-xl font-medium text-yellow-400">Our Menu</h1>
+        <h1 className="text-xl font-medium font-font-base text-yellow">
+          Our Menu
+        </h1>
         <div className="flex flex-col py-4 gap-3">
-          <h1 className="text-2xl font-bold">Our Food Menu</h1>
+          <h1 className="text-2xl font-bold font-font-alt">Our Food Menu</h1>
           <p className="font-semibold text-gray-500">
             Introducing our tantalizing food menu, filled with exquisite <br />{" "}
             flavors and culinary delights to satisfy every palate.
@@ -22,7 +24,7 @@ const CategoryPage = () => {
           <Link
             href={`/product/${item.id}`}
             key={item.id}
-            className="group relative cursor-pointer items-center border-2 border-red-500 justify-center overflow-hidden transition-shadow
+            className="group relative cursor-pointer items-center border-2 bg-golden border-golden justify-center overflow-hidden transition-shadow
            hover:shadow-xl hover:shadow-black/30 rounded-lg"
           >
             <div className="h-96 w-72 flex items-center justify-center mx-auto">
@@ -33,14 +35,15 @@ const CategoryPage = () => {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-300 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <span className="bg-golden"></span>
             <div className="absolute inset-0 flex translate-y-[60%] flex-col gap-3 items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 mb-7 ">
-              <h1 className="font-dmserif text-2xl font-bold text-white">
+              <h1 className="font-dmserif text-2xl font-bold font-font-base text-white">
                 {item.title}
               </h1>
-              <h2 className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <h2 className="mb-3 text-lg italic text-white opacity-0 font-font-alt transition-opacity duration-300 group-hover:opacity-100">
                 {item.price}
               </h2>
-              <button className="uppercase bg-red-500 p-2 rounded-md py-2 px-3.5 font-com text-sm text-white shadow shadow-black/60">
+              <button className="uppercase bg-red hover:bg-yellow p-2 rounded-md py-2 px-3.5 font-com text-sm text-white shadow shadow-black/60">
                 Add to Cart
               </button>
             </div>

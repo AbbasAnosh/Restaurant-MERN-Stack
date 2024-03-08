@@ -10,11 +10,9 @@ const MenuItem = ({ title, price, tags }: Props) => (
   <div className="w-full mt-[1rem] mb-[1rem] flex flex-col">
     <div className="flex justify-between items-center">
       <div className="flex-1">
-        <p className="p__cormorant" style={{ color: "#DCCA87" }}>
-          {title}
-        </p>
+        <p className=" text-yellow font-font-alt">{title}</p>
       </div>
-      <div className="w-[90px] h-[1px] bg-[#DCCA87] mr-[1rem] ml-[1rem]" />
+      <div className="w-[90px] h-[1px] bg-yellow mr-[1rem] ml-[1rem]" />
       <div className="flex justify-end items-end">
         <p className="text-[#FFFFFF] font-[700px] tracking-[0.04em] capitalize leading-[29.9px] text-[23px]">
           {price}
@@ -23,10 +21,7 @@ const MenuItem = ({ title, price, tags }: Props) => (
     </div>
 
     <div className="w-full mt-[0.2rem]">
-      <p
-        className="font-[400px] tracking-[0.04em] capitalize text-[16px]"
-        style={{ color: "#AAAAAA" }}
-      >
+      <p className="font-[400px] tracking-[0.04em] text-white capitalize text-[16px]">
         {tags}
       </p>
     </div>

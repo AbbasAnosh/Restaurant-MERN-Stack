@@ -1,4 +1,4 @@
-import { cocktails, wines } from "@/app/data";
+import { Neapolitan, ItalianPizza } from "@/app/data";
 import React from "react";
 import MenuItem from "./MenuItem";
 
@@ -9,23 +9,23 @@ const SepecialMenu = () => {
       id="menu"
     >
       <div className="mb-[2rem] text-center">
-        <h1 className="text-[#DCCA87] text-[64px] leading-[83.2px] tracking-[0.04em] capitalize">
+        <h1 className="text-yellow font-font-base  text-[64px] leading-[83.2px] tracking-[0.04em] capitalize">
           Today&apos;s Special
         </h1>
       </div>
 
       <div className="w-full mt-[2rem] mb-[2rem] flex justify-center items-center flex-row">
         <div className="flex-1 w-full flex flex-col justify-center items-center">
-          <p className="font-[600px] text-[45px] leading-[58.5px] tracking-[0.04em] text-[#FFFFFF]">
-            Wine & Beer
+          <p className="font-[600px] text-[45px] font-font-base leading-[58.5px] tracking-[0.04em] text-[#FFFFFF]">
+            Italian Pizza
           </p>
-          <div className="flex flex-col mt-[2rem] mb-[2rem] w-full">
-            {wines.map((wine, index) => (
+          <div className="flex flex-col mt-[2rem] font-font-alt mb-[2rem] w-full">
+            {ItalianPizza.map((pizza, index) => (
               <MenuItem
-                key={wine.title + index}
-                title={wine.title}
-                price={wine.price}
-                tags={wine.tags.join(" | ")}
+                key={pizza.title + index}
+                title={pizza.title}
+                price={pizza.price}
+                tags={pizza.tags.join(" | ")}
               />
             ))}
           </div>
@@ -36,16 +36,16 @@ const SepecialMenu = () => {
         </div>
 
         <div className="flex-1 w-full flex-col flex justify-center items-center ">
-          <p className="font-[600px] text-[45px] leading-[58.5px] tracking-[0.04em] text-[#FFFFFF]">
-            Cocktails
+          <p className="font-[600px] text-[45px] leading-[58.5px] font-font-base tracking-[0.04em] text-[#FFFFFF]">
+            Neapolitan Pizza
           </p>
-          <div className="flex flex-col mt-[2rem] mb-[2rem] w-full">
-            {cocktails.map((cocktail, index) => (
+          <div className="flex flex-col mt-[2rem] font-font-alt mb-[2rem] w-full ">
+            {Neapolitan.map((item, index) => (
               <MenuItem
-                key={cocktail.title + index}
-                title={cocktail.title}
-                price={cocktail.price}
-                tags={cocktail.tags.join(" | ")}
+                key={item.title + index}
+                title={item.title}
+                price={item.price}
+                tags={item.tags.join(" | ")}
               />
             ))}
           </div>
@@ -53,7 +53,10 @@ const SepecialMenu = () => {
       </div>
 
       <div style={{ marginTop: 15 }}>
-        <button type="button" className="custom__button">
+        <button
+          type="button"
+          className="px-6 font-font-alt py-4 bg-yellow hover:bg-red font-semibold capitalize  text-white rounded-lg"
+        >
           View More
         </button>
       </div>

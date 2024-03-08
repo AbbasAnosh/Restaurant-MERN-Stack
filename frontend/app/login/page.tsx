@@ -10,19 +10,23 @@ const LoginPage = () => {
           <div className="md:max-w-md w-full sm:px-6 py-4">
             <form>
               <div className="mb-12">
-                <h3 className="text-3xl font-extrabold">Sign in</h3>
-                <p className="text-sm mt-4 ">
+                <h3 className="text-3xl font-extrabold font-font-base">
+                  Sign in
+                </h3>
+                <p className="text-sm mt-4 font-font-alt ">
                   Don't have an account{" "}
                   <a
                     href="javascript:void(0);"
-                    className="text-red-500 font-semibold hover:underline ml-1 whitespace-nowrap"
+                    className="text-yellow font-semibold font-font-alt hover:underline ml-1 whitespace-nowrap"
                   >
                     Register here
                   </a>
                 </p>
               </div>
               <div>
-                <label className="text-xs block mb-2">Email</label>
+                <label className="text-xs block font-font-alt font-semibold mb-2">
+                  Email
+                </label>
                 <div className="relative flex items-center">
                   <input
                     name="email"
@@ -66,7 +70,9 @@ const LoginPage = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <label className="text-xs block mb-2">Password</label>
+                <label className="text-xs block mb-2 font-font-alt font-semibold">
+                  Password
+                </label>
                 <div className="relative flex items-center">
                   <input
                     name="password"
@@ -90,7 +96,7 @@ const LoginPage = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between gap-2 mt-5">
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <input
                     id="remember-me"
                     name="remember-me"
@@ -100,11 +106,11 @@ const LoginPage = () => {
                   <label htmlFor="remember-me" className="ml-3 block text-sm">
                     Remember me
                   </label>
-                </div>
+                </div> */}
                 <div>
                   <a
                     href="jajvascript:void(0);"
-                    className="text-red-500 font-semibold text-sm hover:underline"
+                    className="text-red-500 font-font-alt text-yellow font-semibold text-sm hover:underline"
                   >
                     Forgot Password?
                   </a>

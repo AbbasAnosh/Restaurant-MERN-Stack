@@ -27,9 +27,9 @@ const Price = ({ price, id, options }: Props) => {
         {options?.map((option, index) => (
           <button
             key={option.title}
-            className="min-w-[6rem] p-2 ring-1 ring-red-400 rounded-md"
+            className="min-w-[6rem] p-2 ring-1 font-font-alt ring-golden rounded-md"
             style={{
-              background: selected === index ? "rgb(248 113 113)" : "white",
+              background: selected === index ? "rgb(248 192 23)" : "white",
               color: selected === index ? "white" : "red",
             }}
             onClick={() => setSelected(index)}
@@ -45,21 +45,23 @@ const Price = ({ price, id, options }: Props) => {
           <div className="flex justify-between w-full items-center">
             <button
               onClick={() => setQuantity((prev) => (prev > 1 ? prev - 1 : 1))}
-              className="text-3xl font-bold text-red-500"
+              className="text-3xl font-bold text-yellow"
             >
               {"-"}
             </button>
-            <span className="text-2xl font-bold text-black">{quantity}</span>
+            <span className="text-2xl font-bold font-font-alt text-black">
+              {quantity}
+            </span>
             <button
               onClick={() => setQuantity((prev) => (prev < 9 ? prev + 1 : 9))}
-              className="text-3xl font-bold text-red-500"
+              className="text-3xl font-bold text-yellow"
             >
               {"+"}
             </button>
           </div>
         </div>
 
-        <button className="uppercase w-56 bg-red-500 text-white p-3 ring-1 text-xl font-semibold rounded-lg ring-red-500">
+        <button className="uppercase w-56  font-font-alt bg-yellow hover:bg-red text-white p-3 ring-1 text-xl font-semibold rounded-lg ring-golden">
           Add to Cart
         </button>
       </div>

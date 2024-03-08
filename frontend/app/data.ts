@@ -208,59 +208,59 @@ type Wine = {
   tags: string[];
 }[]
 
-export const wines: Wine = [
+export const ItalianPizza: Wine = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: ['AU',  'Bottle'],
+    title: 'Ai Broccoli',
+    price: '$14',
+    tags: ['Tomato sauce',  'Mozzarella', 'Salmon', 'Garlic'],
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: ['AU' , 'Bottle'],
+    title: 'Bianca',
+    price: '$39',
+    tags: ['Ricotta' , 'Mozzarella', 'Garlic'],
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: ['FR' , '750 ml'],
+    title: 'Bolognese',
+    price: '$42',
+    tags: ['Bolognese sauce' , 'Mozzarella'],
   },
   {
-    title: 'Rhino Pale Ale',
+    title: 'Caprese',
     price: '$31',
-    tags: ['CA' , '750 ml'],
+    tags: ['Tomato sauce' , 'Mozarella', 'Cherry tomatoes'],
   },
   {
-    title: 'Irish Guinness',
+    title: 'Chicken Alfredo',
     price: '$26',
-    tags: ['IE' , '750 ml'],
+    tags: ['Tomato sauce' , 'Cherry tomatoes', 'Mozarella'],
   },
 ];
 
-export const cocktails: Wine = [
+export const Neapolitan: Wine = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: ['Aperol'  ,'Villa', 'Marchesi',  'prosecco' , 'soda ', '30 ml'],
+    title: 'Marinara',
+    price: '$12',
+    tags: ['Marinara sauce'  ,'Garlic', 'Olive oil',  'Basil'],
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: ['Dark rum ',  'Ginger beer' , 'Slice of lime'],
+    title: "Margherita",
+    price: '$13',
+    tags: ['San Marzano tomato sauce',  'Mozzarella di bufala'],
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: ['Rum' , 'Citrus juice' , 'Sugar'],
+    title: 'California Style',
+    price: '$15',
+    tags: ['Tomato sauce' , 'Mozzarella' , 'Salmon', 'Garlic'],
   },
   {
-    title: 'Old Fashioned',
+    title: 'Buffalo Chicken',
     price: '$31',
-    tags: ['Bourbon ',  'Brown sugar',  'Angostura Bitters'],
+    tags: ['Ricotta ',  'Mozzarella',  'Garlic'],
   },
   {
-    title: 'Negroni',
+    title: 'Carolina Reaper',
     price: '$26',
-    tags: ['Gin',  'Sweet Vermouth',  'Campari',  'Orange garnish'],
+    tags: ['Bolognese sauce',  'Mozzarella'],
   },
 ];
 
@@ -399,136 +399,6 @@ export const cocktails: Wine = [
   ];
   
   
-  
-  // export const pizzas: Products = [
-  //   {
-  //     id: 1,
-  //     title: "Sicilian",
-  //     desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
-  //     img: "/food/food1.png",
-  //     price: 24.9,
-  //     options: [
-  //       {
-  //         title: "Small",
-  //         additionalPrice: 0,
-  //       },
-  //       {
-  //         title: "Medium",
-  //         additionalPrice: 4,
-  //       },
-  //       {
-  //         title: "Large",
-  //         additionalPrice: 6,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Mediterranean Delight",
-  //     desc: "Embark on a culinary journey with this Mediterranean-inspired creation, featuring zesty feta cheese, Kalamata olives, sun-dried tomatoes, and a sprinkle of oregano.",
-  //     img: "/food/food2.png",
-  //     price: 32.9,
-  //     options: [
-  //       {
-  //         title: "Small",
-  //         additionalPrice: 0,
-  //       },
-  //       {
-  //         title: "Medium",
-  //         additionalPrice: 4,
-  //       },
-  //       {
-  //         title: "Large",
-  //         additionalPrice: 6,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Bella Napoli",
-  //     desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-  //     img: "/food/food3.png",
-  //     price: 26.9,
-  //     options: [
-  //       {
-  //         title: "Small",
-  //         additionalPrice: 0,
-  //       },
-  //       {
-  //         title: "Medium",
-  //         additionalPrice: 4,
-  //       },
-  //       {
-  //         title: "Large",
-  //         additionalPrice: 6,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Pesto Primavera",
-  //     desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-  //     img: "/food/food4.png",
-  //     price: 28.9,
-  //     options: [
-  //       {
-  //         title: "Small",
-  //         additionalPrice: 0,
-  //       },
-  //       {
-  //         title: "Medium",
-  //         additionalPrice: 4,
-  //       },
-  //       {
-  //         title: "Large",
-  //         additionalPrice: 6,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Veggie Supreme",
-  //     desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-  //     img: "/food/food5.png",
-  //     price: 24.9,
-  //     options: [
-  //       {
-  //         title: "Small",
-  //         additionalPrice: 0,
-  //       },
-  //       {
-  //         title: "Medium",
-  //         additionalPrice: 4,
-  //       },
-  //       {
-  //         title: "Large",
-  //         additionalPrice: 6,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Four Cheese Fantasy",
-  //     desc: "Experience pure cheesy bliss with a melty blend of mozzarella, cheddar, provolone, and Parmesan cheeses, creating a rich and indulgent pizza experience.",
-  //     img: "/food/food6.png",
-  //     price: 22.9,
-  //     options: [
-  //       {
-  //         title: "Small",
-  //         additionalPrice: 0,
-  //       },
-  //       {
-  //         title: "Medium",
-  //         additionalPrice: 4,
-  //       },
-  //       {
-  //         title: "Large",
-  //         additionalPrice: 6,
-  //       },
-  //     ],
-  //   },
-  // ];
-  
   export const singleProduct: Product = {
     id: 1,
     title: "Sicilian",
@@ -567,7 +437,7 @@ export const cocktails: Wine = [
       slug: "pastas",
       title: "Italian Pastas",
       desc: "Savor the taste of perfection with our exquisite Italian handmade pasta menu.",
-      img: "/temporary/m1.png",
+      img: "/food/food1.png",
       color: "white",
     },
     {
@@ -575,7 +445,7 @@ export const cocktails: Wine = [
       slug: "burgers",
       title: "Juicy Burgers",
       desc: "Burger Bliss: Juicy patties, bold flavors, and gourmet toppings galore.",
-      img: "/temporary/m2.png",
+      img: "/food/food2.png",
       color: "black",
     },
     {
@@ -583,7 +453,7 @@ export const cocktails: Wine = [
       slug: "pizzas",
       title: "Cheesy Pizzas",
       desc: "Pizza Paradise: Irresistible slices, mouthwatering toppings, and cheesy perfection.",
-      img: "/temporary/m3.png",
+      img: "/food/food3.png",
       color: "white",
     },
   ];

@@ -14,14 +14,24 @@ const config: Config = {
       'font-alt': ['Open Sans', 'sans-serif']
   
     },
-    // colors: {
-    //   golden: '#DCCA87',
-    //   black: '#0C0C0C',
-    //   gray: '#545454',
-    //   crimson: '#F5EFDB',
-    //   grey: '#AAAAAA',
-    //   white: '#FFFFFF'
-    // }
+    colors: {
+      golden: '#DCCA87',
+      black: '#0C0C0C',
+      red: '#EF4444',
+      blue: {
+        300: '#93c5fd',
+        700: '#0369a1'
+      },
+      gray: {
+        400: '#9ca3af', 
+        300: '#d1d5db',
+        100: '#f3f4f6',
+        500: "#6b7280"
+      },
+      crimson: '#F5EFDB',
+      yellow: '#F2C017',
+      white: '#FFFFFF'
+    }
   },
   plugins: [],
 };

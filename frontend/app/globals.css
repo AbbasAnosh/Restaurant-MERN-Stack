@@ -17,6 +17,10 @@
 } */
 
 
+/* 
+body{
+  background-color: #0C0C0C;
+} */
 
 @layer utilities {
    
@@ -29,3 +33,5 @@
         scrollbar-width: none;  
   }
 }
+
+

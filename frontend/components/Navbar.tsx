@@ -8,19 +8,25 @@ import MyIcon from "./MyIcon";
 const Navbar = () => {
   const user = false;
   return (
-    <div className="h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-20 xl:px-40">
+    <div className="h-12 p-4 flex items-center justify-between border-b-2 border-b-yellow uppercase md:h-24 lg:px-20 xl:px-40">
       <div>
         <Link
           href="/"
-          className="text-xl md:font-bold md:text-center font-[font-alt]"
+          className="text-3xl md:font-bold md:text-center font-[font-alt] text-red"
         >
           YUMMY
         </Link>
       </div>
-      <div className="hidden md:flex gap-4 font-semibold">
-        <Link href="/">Home</Link>
-        <Link href="/menu">Menu</Link>
-        <Link href="/">Contact</Link>
+      <div className="hidden md:flex gap-4 font-bold tracking-wider font-font-base">
+        <Link href="/" className="hover:text-red">
+          Home
+        </Link>
+        <Link href="/menu" className="hover:text-red">
+          Menu
+        </Link>
+        <Link href="/contact" className="hover:text-red">
+          Contact
+        </Link>
       </div>
 
       <div className="md:hidden">
@@ -32,11 +38,13 @@ const Navbar = () => {
           <span>403 903 2347</span>
         </div> */}
         {!user ? (
-          <Link href="/login">
+          <Link href="/login" className="text-red hover:text-yellow">
             <MyIcon />
           </Link>
         ) : (
-          <Link href="/order">Order</Link>
+          <Link href="/order" className="font-font-base">
+            Order
+          </Link>
         )}
         <CartIcon />
       </div>
