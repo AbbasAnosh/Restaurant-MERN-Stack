@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 type Props = {
@@ -61,9 +62,11 @@ const Price = ({ price, id, options }: Props) => {
           </div>
         </div>
 
-        <button className="uppercase w-56  font-font-alt bg-yellow hover:bg-red text-white p-3 ring-1 text-xl font-semibold rounded-lg ring-golden">
-          Add to Cart
-        </button>
+        <Link href="/cart">
+          <button className="uppercase w-56  font-font-alt bg-yellow hover:bg-red text-white p-3 ring-1 text-xl font-semibold rounded-lg ring-golden">
+            Add to Cart
+          </button>
+        </Link>
       </div>
     </div>
   );

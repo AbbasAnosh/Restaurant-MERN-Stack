@@ -1,6 +1,7 @@
 "use client";
 
 import { featuredProducts } from "@/app/data";
+import Link from "next/link";
 import React, { useState } from "react";
 import { MdAddShoppingCart } from "react-icons/md";
 
@@ -60,10 +61,11 @@ const Featured = () => {
                   <span className="text-xl font-bold font-font-alt text-yellow">
                     ${item.price}
                   </span>
-
-                  <button className="bg-yellow hover:text-red text-white text-2xl p-2 rounded-md">
-                    <MdAddShoppingCart />
-                  </button>
+                  <Link href="/cart">
+                    <button className="bg-yellow hover:text-red text-white text-2xl p-2 rounded-md">
+                      <MdAddShoppingCart />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

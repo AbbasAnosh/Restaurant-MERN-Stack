@@ -1,5 +1,6 @@
 import React from "react";
 import { pizzas } from "../data";
+import Link from "next/link";
 
 const CheckoutPage = () => {
   return (
@@ -60,7 +61,7 @@ const CheckoutPage = () => {
           </div>
         </div>
         <div className="xl:col-span-2 h-max rounded-md p-8 sticky top-0">
-          <h2 className="text-2xl font-bold font-font-base text-[#333]">
+          <h2 className="text-2xl font-bold font-font-base text-yellow">
             Complete your order
           </h2>
           <form className="mt-10">
@@ -206,18 +207,18 @@ const CheckoutPage = () => {
                 />
               </div>
               <div className="flex gap-6 max-sm:flex-col mt-10">
-                <button
-                  type="button"
-                  className="rounded-md px-6 py-3 w-full text-sm font-semibold font-font-alt bg-transparent bg-yellow hover:bg-red border-2 text-white"
+                <Link
+                  href="/"
+                  className="rounded-md px-6 py-3 w-full text-center text-sm font-semibold font-font-alt bg-transparent bg-yellow hover:bg-red border-2 text-white"
                 >
                   Cancel
-                </button>
-                <button
-                  type="button"
-                  className="rounded-md px-6 py-3 w-full text-sm font-font-alt font-semibold bg-red text-white hover:bg-yellow"
+                </Link>
+                <Link
+                  href="/"
+                  className="rounded-md text-center px-6 py-3 w-full text-sm font-font-alt font-semibold bg-red text-white hover:bg-yellow"
                 >
                   Complete Purchase
-                </button>
+                </Link>
               </div>
             </div>
           </form>

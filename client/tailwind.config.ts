@@ -26,7 +26,8 @@ const config: Config = {
         400: '#9ca3af', 
         300: '#d1d5db',
         100: '#f3f4f6',
-        500: "#6b7280"
+        500: "#6b7280",
+        700: "#374151"
       },
       crimson: '#F5EFDB',
       yellow: '#F2C017',

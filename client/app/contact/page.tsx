@@ -12,7 +12,7 @@ const page = () => {
       </div>
       <div className="-mt-28 mb-6 px-4">
         <div className="mx-auto max-w-6xl shadow-lg py-8 px-6 relative bg-white rounded">
-          <h2 className="text-xl font-font-base text-yellow font-bold">
+          <h2 className="text-2xl font-font-base text-yellow font-bold">
             Dining Experience Feedback
           </h2>
           <form className="mt-8 grid sm:grid-cols-2 gap-6">
@@ -27,7 +27,9 @@ const page = () => {
               />
             </div>
             <div>
-              <label className="font-semibold text-sm">Your Email</label>
+              <label className="font-semibold text-sm font-font-alt">
+                Your Email
+              </label>
               <input
                 type="email"
                 placeholder="Email"
@@ -35,7 +37,9 @@ const page = () => {
               />
             </div>
             <div>
-              <label className="font-semibold text-sm">Your Number</label>
+              <label className="font-semibold text-sm font-font-alt">
+                Your Number
+              </label>
               <input
                 type="email"
                 placeholder="Phone No."
@@ -43,7 +47,9 @@ const page = () => {
               />
             </div>
             <div>
-              <label className="font-semibold text-sm">Website</label>
+              <label className="font-semibold text-sm font-font-alt">
+                Website
+              </label>
               <input
                 type="text"
                 placeholder="Website"
@@ -51,7 +57,10 @@ const page = () => {
               />
             </div>
             <div>
-              <label className="font-semibold text-sm">Company</label>
+              <label className="font-semibold text-sm font-font-alt">
+                Company
+              </label>
+
               <input
                 type="text"
                 placeholder="Company"
@@ -59,7 +68,9 @@ const page = () => {
               />
             </div>
             <div>
-              <label className="font-semibold text-sm">Subject</label>
+              <label className="font-semibold text-sm font-font-alt">
+                Subject
+              </label>
               <input
                 type="text"
                 placeholder="Subject"
@@ -67,29 +78,18 @@ const page = () => {
               />
             </div>
             <div className="col-span-full">
-              <label className="font-semibold text-sm">Message</label>
+              <label className="font-semibold text-sm font-font-alt">
+                Message
+              </label>
               <textarea
                 placeholder="Message"
                 rows={6}
                 className="w-full rounded px-4 border-2 mt-2 border-golden text-sm pt-3 outline-yellow"
               ></textarea>
             </div>
-            <div className="flex items-center col-span-full">
-              <input id="checkbox1" type="checkbox" className="w-4 h-4 mr-3" />
-              <label htmlFor="checkbox1" className="text-sm text-gray-400">
-                I agree to the{" "}
-                <a href="javascript:void(0);" className="underline">
-                  Terms and Conditions
-                </a>{" "}
-                and{" "}
-                <a href="javascript:void(0);" className="underline">
-                  Privacy Policy
-                </a>
-              </label>
-            </div>
             <button
               type="button"
-              className="text-white w-max bg-[#007bff] hover:bg-blue-600 font-semibold rounded text-sm px-6 py-3"
+              className="text-white w-max bg-red hover:bg-blue-600 font-semibold rounded text-sm px-6 py-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

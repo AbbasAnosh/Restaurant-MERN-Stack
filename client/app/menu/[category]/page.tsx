@@ -6,7 +6,7 @@ import React from "react";
 
 const CategoryPage = () => {
   return (
-    <div className="m-6">
+    <div className="mr-[10rem] ml-[10rem] mt-[3rem] mb-[3rem]">
       <div className="mb-12">
         <h1 className="text-xl font-medium font-font-base text-yellow">
           Our Menu
@@ -19,7 +19,7 @@ const CategoryPage = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
         {pizzas.map((item) => (
           <Link
             href={`/product/${item.id}`}
@@ -27,9 +27,9 @@ const CategoryPage = () => {
             className="group relative cursor-pointer items-center border-2 bg-golden border-golden justify-center overflow-hidden transition-shadow
            hover:shadow-xl hover:shadow-black/30 rounded-lg"
           >
-            <div className="h-96 w-72 flex items-center justify-center mx-auto">
+            <div className="h-80 w-52 flex items-center justify-center mx-auto">
               <img
-                className="h-54 w-54 object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                className="h-48 w-48 object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                 src={item.img}
                 alt=""
               />
@@ -51,26 +51,6 @@ const CategoryPage = () => {
         ))}
       </div>
     </div>
-
-    // <div className="flex flex-wrap text-red-500">
-    //   {pizzas.map((item) => (
-    //     <Link className="w-full h-[60vh] border-r-2 border-b-2 border-red-500 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group odd:bg-fuchsia-50"
-    //       href={`/product/${item.id}`} key={item.id}>
-
-    //       {item.img && (
-    //         <div className="relative h-[80%]">
-    //           <Image src={item.img} alt="" fill className="object-contain"/>
-    //         </div>
-    //       )}
-
-    //       <div className="flex items-center justify-between font-bold">
-    //         <h1 className="text-2xl uppercase p-2">{item.title}</h1>
-    //         <h2 className="group-hover:hidden text-xl">${item.price}</h2>
-    //         <button className="hidden group-hover:block uppercase bg-red-500 text-white p-2 rounded-md">Add to Cart</button>
-    //       </div>
-    //     </Link>
-    //   ))}
-    // </div>
   );
 };
 

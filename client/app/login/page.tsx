@@ -15,12 +15,12 @@ const LoginPage = () => {
                 </h3>
                 <p className="text-sm mt-4 font-font-alt ">
                   Don't have an account{" "}
-                  <a
-                    href="javascript:void(0);"
+                  <Link
+                    href="/register"
                     className="text-yellow font-semibold font-font-alt hover:underline ml-1 whitespace-nowrap"
                   >
                     Register here
-                  </a>
+                  </Link>
                 </p>
               </div>
               <div>
@@ -32,13 +32,13 @@ const LoginPage = () => {
                     name="email"
                     type="text"
                     required
-                    className="w-full text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none"
+                    className="w-full text-sm border-b placeholder:text-gray-500 border-golden focus:border-[#333] px-2 py-3 outline-none"
                     placeholder="Enter email"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="#bbb"
-                    stroke="#bbb"
+                    fill="#F2C017"
+                    // stroke="#bbb"
                     className="w-[18px] h-[18px] absolute right-2"
                     viewBox="0 0 682.667 682.667"
                   >
@@ -55,9 +55,9 @@ const LoginPage = () => {
                       transform="matrix(1.33 0 0 -1.33 0 682.667)"
                     >
                       <path
-                        fill="none"
-                        stroke-miterlimit="10"
-                        stroke-width="40"
+                        fill="#F2C017"
+                        // stroke-miterlimit="10"
+                        // stroke-width="40"
                         d="M452 444H60c-22.091 0-40-17.909-40-40v-39.446l212.127-157.782c14.17-10.54 33.576-10.54 47.746 0L492 364.554V404c0 22.091-17.909 40-40 40Z"
                         data-original="#000000"
                       ></path>
@@ -78,12 +78,12 @@ const LoginPage = () => {
                     name="password"
                     type="password"
                     required
-                    className="w-full text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none"
+                    className="w-full text-sm border-b placeholder:text-gray-500 border-golden focus:border-[#333] px-2 py-3 outline-none"
                     placeholder="Enter password"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="#bbb"
+                    fill="#F2C017"
                     stroke="#bbb"
                     className="w-[18px] h-[18px] absolute right-2 cursor-pointer"
                     viewBox="0 0 128 128"
@@ -96,17 +96,6 @@ const LoginPage = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between gap-2 mt-5">
-                {/* <div className="flex items-center">
-                  <input
-                    id="remember-me"
-                    name="remember-me"
-                    type="checkbox"
-                    className="h-4 w-4 shrink-0 text-red-500 focus:ring-red-500 border-gray-300 rounded"
-                  />
-                  <label htmlFor="remember-me" className="ml-3 block text-sm">
-                    Remember me
-                  </label>
-                </div> */}
                 <div>
                   <a
                     href="jajvascript:void(0);"
@@ -119,12 +108,12 @@ const LoginPage = () => {
               <div className="mt-12">
                 <button
                   type="button"
-                  className="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-full text-white bg-red-500 hover:bg-red-600 focus:outline-none"
+                  className="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-full text-white bg-red hover:bg-yellow focus:outline-none"
                 >
                   Sign in
                 </button>
               </div>
-              <p className="my-8 text-sm text-gray-400 text-center">
+              <p className="my-8 text-sm text-gray-500 text-center">
                 or continue with
               </p>
               <div className="space-x-8 flex justify-center">
@@ -186,7 +175,7 @@ const LoginPage = () => {
           </div>
           <div className="md:h-full max-md:mt-10 bg-[#000842] rounded-xl lg:p-12 p-8">
             <img
-              src="https://readymadeui.com/signin-image.webp"
+              src="/login.svg"
               className="w-full h-full object-contain"
               alt="login-image"
             />
@@ -194,43 +183,6 @@ const LoginPage = () => {
         </div>
       </div>
     </div>
-    // <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center">
-
-    //   <div className=" h-full shadow-2xl rounded-md flex flex-col md:flex-row md:h-[80%] md:w-full lg:w-[60%] 2xl:w-1/2">
-
-    //     <div className="relative h-1/3 w-full md:h-full md:w-1/2">
-    //       <Image src="/loginBg.png" alt="" fill className="object-cover"/>
-    //     </div>
-
-    //     <div className="p-10 flex flex-col gap-8 md:w-1/2">
-    //       <h1 className="font-bold text-xl xl:text-3xl">Welcome</h1>
-    //       <p>Log into your account or create a new one using social buttons</p>
-    //       <button className="flex gap-4 p-4 ring-1 ring-orange-100 rounded-md">
-    //         <Image
-    //           src="/google.png"
-    //           alt=""
-    //           width={20}
-    //           height={20}
-    //           className="object-contain"
-    //         />
-    //         <span>Sign in with Google</span>
-    //       </button>
-    //       <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md">
-    //         <Image
-    //           src="/facebook.png"
-    //           alt=""
-    //           width={20}
-    //           height={20}
-    //           className="object-contain"
-    //         />
-    //         <span>Sign in with Facebook</span>
-    //       </button>
-    //       <p className="text-sm">
-    //         Have a problem?<Link className="underline" href="/"> Contact us</Link>
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

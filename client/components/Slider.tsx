@@ -45,8 +45,9 @@ const Slider = () => {
         <div className="flex items-center gap-2">
           <div className="rounded-md shadow">
             <Link
-              href="/"
-              className="w-full flex items-center justify-center px-3 py-3 text-base leading-6 font-medium font-font-alt rounded-md text-white bg-yellow hover:bg-red focus:ring ring-offset-2 ring-pink-400 focus:outline-none transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+              href="/menu"
+              className="w-full flex items-center justify-center px-3 py-3 text-base leading-6 font-medium font-font-alt rounded-md text-white bg-yellow hover:bg-red 
+              transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
             >
               Order Now
             </Link>
