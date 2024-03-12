@@ -22,8 +22,7 @@ const Price = ({ price, id, options }: Props) => {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-2xl font-bold">${total.toFixed(2)}</h2>
-
+      <h2 className="text-2xl font-bold">${total && total.toFixed(2)}</h2>
       <div className="flex gap-4">
         {options?.map((option, index) => (
           <button
@@ -42,7 +41,6 @@ const Price = ({ price, id, options }: Props) => {
 
       <div className="flex justify-between items-center gap-2">
         <div className="flex justify-between w-full p-2 bg-[#F1F5F9] shadow-md rounded-lg">
-          {/* <span>Quantity</span> */}
           <div className="flex justify-between w-full items-center">
             <button
               onClick={() => setQuantity((prev) => (prev > 1 ? prev - 1 : 1))}
