@@ -1,11 +1,13 @@
 "use client";
 
+import { useShoppingCart } from "@/app/context/ShoppingCartContext";
 import { featuredProducts } from "@/app/data";
 import Link from "next/link";
 import React, { useState } from "react";
 import { MdAddShoppingCart } from "react-icons/md";
 
 const Featured = () => {
+  const { incrementItemQuantity } = useShoppingCart();
   return (
     <div>
       <div className="text-center mb-[4rem] text-yellow font-font-base text-[64px] leading-[83.2px] tracking-[0.04em] capitalize">
@@ -20,7 +22,7 @@ const Featured = () => {
               <div
                 key={item.id}
                 className="w-screen flex flex-col items-center justify-around
-              border-2 border-golden rounded-lg  xl:w-[24vw] h-[70vh] group"
+              border-2 border-golden rounded-lg xl:w-[24vw] h-[70vh] group"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
@@ -62,10 +64,12 @@ const Featured = () => {
                     <span className="text-xl font-bold font-font-alt text-yellow">
                       ${item.price}
                     </span>
-                    <Link href="/cart">
-                      <button className="bg-yellow hover:text-red text-white text-2xl p-2 rounded-md">
-                        <MdAddShoppingCart />
-                      </button>
+
+                    <Link
+                      href="/menu"
+                      className="bg-yellow hover:bg-red text-black hover:text-white text-2xl p-2 rounded-md"
+                    >
+                      <MdAddShoppingCart />
                     </Link>
                   </div>
                 </div>

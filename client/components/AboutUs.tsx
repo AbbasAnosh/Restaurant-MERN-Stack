@@ -4,21 +4,21 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="flex mt-[5rem] mb-[6rem] flex-col h-[calc(100vh-6rem)] justify-around  p-4 md:h-[calc(100vh-3rem)] items-center ">
-      <div className="mb-[4rem]">
+    <div className="flex md:mt-[6rem] md:mb-[6rem] lg:mt-[10rem] lg:mb-[10rem] xl:mt-[5rem] xl:mb-[4rem] flex-col h-full justify-around  p-4 md:h-[calc(100vh-3rem)] items-center ">
+      <div className="mb-[1rem] lg:mb-[4rem]">
         <h1 className="text-yellow font-font-base text-[64px] leading-[83.2px] tracking-[0.04em] capitalize">
           About Us
         </h1>
       </div>
-      <div className="flex flex-row">
-        <div className="w-1/2 flex ">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-1/2 md:flex mb-4">
           <div className="flex gap-4">
             <img
               src="/About/about2.jpg"
               alt=""
-              className="h-full w-[400px] object-cover rounded-md"
+              className="h-full w-full xl:w-[400px] object-cover rounded-md"
             />
-            <div className="relative">
+            <div className="relative hidden xl:flex">
               <img
                 src="/About/about3.jpg"
                 alt=""
@@ -27,7 +27,7 @@ const AboutUs = () => {
               <img
                 src="/About/about_dish1.png"
                 alt=""
-                className="h-[200px] w-[200px] object-cover rounded-md absolute
+                className=" h-[200px] w-[200px] object-cover rounded-md absolute
                             top-[20rem] right-16 hover:animate-spin
                             "
               />
@@ -41,7 +41,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex p-8 flex-col gap-10">
+        <div className="md:w-1/2 md:flex md:p-8 flex-col gap-10">
           <h1 className="text-3xl font-bold font-font-base capitalize">
             Exquisite Eats Here
           </h1>
@@ -70,7 +70,7 @@ const AboutUs = () => {
                     y="0px"
                     viewBox="0 0 32 32"
                     className="w-[36px] h-[36px] bg-yellow p-1 rounded-lg"
-                    fill="#FFFFFF"
+                    fill="#0C0C0C"
                     // style="enable-background:new 0 0 32 32;"
                     // xml:space="preserve"
                   >
@@ -94,7 +94,7 @@ const AboutUs = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-[36px] h-[36px] bg-yellow p-1 rounded-lg"
-                    fill="#FFFFFF"
+                    fill="#0C0C0C"
                     viewBox="0 0 64 64"
                   >
                     <g id="Layer_17" data-name="Layer 17">
@@ -118,7 +118,7 @@ const AboutUs = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-[36px] h-[36px] bg-yellow p-1 rounded-lg"
-                    fill="#FFFFFF"
+                    fill="#0C0C0C"
                     viewBox="0 0 24 24"
                   >
                     <path d="M6.5 20C4.57 20 3 18.43 3 16.5S4.57 13 6.5 13s3.5 1.57 3.5 3.5S8.43 20 6.5 20zm0-5c-.827 0-1.5.673-1.5 1.5S5.673 18 6.5 18 8 17.327 8 16.5 7.327 15 6.5 15zM19.5 20c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zm0-5c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z" />
@@ -137,7 +137,7 @@ const AboutUs = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     className="w-[36px] h-[36px] bg-yellow p-1 rounded-lg"
-                    fill="#FFFFFF"
+                    fill="#0C0C0C"
                   >
                     <path d="M20,8.5V2.12A2.12,2.12,0,0,0,17.88,0H6.12A2.12,2.12,0,0,0,4,2.12V21.88A2.12,2.12,0,0,0,6.12,24H17.88A2.12,2.12,0,0,0,20,21.88V20.5a6.5,6.5,0,0,0,0-12ZM10,2h4V3H10Zm8,19.88a.12.12,0,0,1-.12.12H6.12A.12.12,0,0,1,6,21.88V2.12A.12.12,0,0,1,6.12,2H8V3.31A1.69,1.69,0,0,0,9.69,5h4.62A1.69,1.69,0,0,0,16,3.31V2h1.88a.12.12,0,0,1,.12.12V8a4.19,4.19,0,0,0-.5,0,6.5,6.5,0,0,0,0,13,4.19,4.19,0,0,0,.5,0ZM17.5,19A4.5,4.5,0,1,1,22,14.5,4.51,4.51,0,0,1,17.5,19Z" />
                     <polygon points="17 14.59 15.71 13.29 14.29 14.71 17 17.41 20.71 13.71 19.29 12.29 17 14.59" />
@@ -148,7 +148,7 @@ const AboutUs = () => {
             </div>
             <div className="mt-12 ">
               <Link href="/menu">
-                <button className=" py-4 px-4 bg-red-500 hover:bg-red bg-yellow font-font-alt text-white font-semibold rounded-md">
+                <button className=" py-4 px-4 bg-red-500 hover:bg-red bg-yellow font-font-alt text-black hover:text-white font-semibold rounded-md">
                   ORDER NOW
                 </button>
               </Link>

@@ -1,50 +1,57 @@
-import React from "react";
-import { pizzas } from "../data";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
+import { useShoppingCart } from "../context/ShoppingCartContext";
+import { useCartStore } from "../utils/store";
 
 const CheckoutPage = () => {
+  // const { cartItems } = useShoppingCart();
+  const { products, totalItems, totalPrice } = useCartStore();
+  useEffect(() => {
+    useCartStore.persist.rehydrate();
+  }, []);
   return (
     <div className="font-[sans-serif] bg-gray-50">
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 h-full">
-        <div className="bg-[#3f3f3f] lg:h-screen lg:sticky lg:top-0">
+        <div className="bg-golden lg:h-screen lg:sticky lg:top-0">
           <div className="relative h-full">
             <div
               className="p-8 lg:overflow-auto scrollbar-thin hover:scrollbar-thumb-sky-500
              scrollbar-thumb-yellow scrollbar-track-golden lg:h-[calc(100vh-60px)]"
             >
-              <h2 className="text-2xl font-bold font-font-base text-white">
+              <h2 className="text-2xl font-bold font-font-base text-black">
                 Order Summary
               </h2>
               <div className="space-y-6 mt-10">
-                {pizzas.map((checkout) => (
-                  <div className="grid sm:grid-cols-2 items-start gap-6">
+                {products.map((checkout) => (
+                  <div className="grid sm:grid-cols-2 items-center  gap-6">
                     <div className="px-4 py-6 shrink-0 bg-golden rounded-md">
                       <img
                         src={checkout.img}
-                        className="w-full object-contain"
+                        className="bg-red rounded-lg  object-contain"
                       />
                     </div>
                     <div>
-                      <h3 className="text-base text-yellow font-font-alt">
+                      <h3 className="text-base text-black font-bold font-font-alt">
                         {checkout.title}
                       </h3>
                       <ul className="text-xs text-white space-y-3 mt-4">
-                        <li className="flex font-font-alt flex-wrap gap-4">
+                        <li className="flex text-gray-700 font-semibold font-font-alt flex-wrap gap-4">
                           Price{" "}
-                          <span className="ml-auto text-yellow font-font-alt">
-                            {checkout.price}
+                          <span className="ml-auto text-black font-semibold font-font-alt">
+                            {checkout && checkout.price?.toFixed(2)}
                           </span>
                         </li>
-                        <li className="flex flex-wrap gap-4">
+                        <li className="flex flex-wrap gap-4 text-gray-700 font-semibold">
                           Quantity{" "}
-                          <span className="ml-auto font-font-alt text-yellow">
-                            2
+                          <span className="ml-auto font-font-alt text-black font-semibold">
+                            {totalItems}
                           </span>
                         </li>
-                        <li className="flex flex-wrap gap-4 font-font-alt">
+                        <li className="flex flex-wrap gap-4 text-gray-700 font-semibold font-font-alt">
                           Total Price{" "}
-                          <span className="ml-auto font-font-alt text-yellow">
-                            $40
+                          <span className="ml-auto font-font-alt text-black font-semibold">
+                            ${totalPrice.toFixed(2)}
                           </span>
                         </li>
                       </ul>
@@ -55,7 +62,7 @@ const CheckoutPage = () => {
             </div>
             <div className="absolute left-0 bottom-0 bg-golden w-full p-4">
               <h4 className="flex flex-wrap gap-4 text-base text-black font-font-alt">
-                Total <span className="ml-auto">$84.00</span>
+                Total <span className="ml-auto">${totalPrice.toFixed(2)}</span>
               </h4>
             </div>
           </div>
@@ -209,13 +216,13 @@ const CheckoutPage = () => {
               <div className="flex gap-6 max-sm:flex-col mt-10">
                 <Link
                   href="/"
-                  className="rounded-md px-6 py-3 w-full text-center text-sm font-semibold font-font-alt bg-transparent bg-yellow hover:bg-red border-2 text-white"
+                  className="rounded-md px-6 py-3 w-full text-center text-sm font-semibold font-font-alt bg-transparent bg-yellow text-black hover:bg-red hover:text-white"
                 >
                   Cancel
                 </Link>
                 <Link
                   href="/"
-                  className="rounded-md text-center px-6 py-3 w-full text-sm font-font-alt font-semibold bg-red text-white hover:bg-yellow"
+                  className="rounded-md text-center px-6 py-3 w-full text-sm font-font-alt font-semibold bg-red text-white hover:bg-yellow hover:text-black"
                 >
                   Complete Purchase
                 </Link>

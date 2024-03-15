@@ -1,12 +1,14 @@
+"use client";
+import { useShoppingCart } from "@/app/context/ShoppingCartContext";
 import { pizzas } from "@/app/data";
-import MenuCard from "@/components/MenuCard";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const CategoryPage = () => {
+const CategoryPage: React.FC = () => {
+  const { incrementItemQuantity } = useShoppingCart();
+
   return (
-    <div className="mr-[10rem] ml-[10rem] mt-[3rem] mb-[3rem]">
+    <div className="mr-2 ml-2 lg:mr-[10rem] lg:ml-[10rem] mt-[3rem] mb-[3rem]">
       <div className="mb-12">
         <h1 className="text-xl font-medium font-font-base text-yellow">
           Our Menu
@@ -40,12 +42,18 @@ const CategoryPage = () => {
               <h1 className="font-dmserif text-2xl font-bold font-font-base text-white">
                 {item.title}
               </h1>
-              <h2 className="mb-3 text-lg italic text-white opacity-0 font-font-alt transition-opacity duration-300 group-hover:opacity-100">
+              <h2 className="mb-3 text-lg italic text-white bg-red p-4 rounded-lg opacity-0 font-font-alt transition-opacity duration-300 group-hover:opacity-100">
                 {item.price}
               </h2>
-              <button className="uppercase bg-red hover:bg-yellow p-2 rounded-md py-2 px-3.5 font-com text-sm text-white shadow shadow-black/60">
+
+              {/* <button
+                onClick={() => {
+                  incrementItemQuantity(item);
+                }}
+                className="uppercase bg-red hover:bg-yellow p-2 rounded-md py-2 px-3.5 font-com text-sm text-white shadow shadow-black/60"
+              >
                 Add to Cart
-              </button>
+              </button> */}
             </div>
           </Link>
         ))}

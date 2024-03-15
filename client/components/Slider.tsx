@@ -35,8 +35,8 @@ const Slider = () => {
 
   return (
     <div
-      className="flex pt-2 flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-fuchsia-50 items-center"
-      style={{ backgroundImage: "url('/contact-bg.jpg')" }}
+      className="flex pt-2 space-y-7 flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] md:flex-row bg-fuchsia-50 items-center"
+      style={{ backgroundImage: "url('/slider-img.jpg')" }}
     >
       <div className="md:w-1/2 md:p-4 flex items-center justify-center flex-col gap-4 font-bold">
         <h1 className="text-4xl text-center font-font-alt uppercase p-4 md:p-10 md:text-4xl xl:text-4xl text-yellow">
@@ -46,7 +46,7 @@ const Slider = () => {
           <div className="rounded-md shadow">
             <Link
               href="/menu"
-              className="w-full flex items-center justify-center px-3 py-3 text-base leading-6 font-medium font-font-alt rounded-md text-white bg-yellow hover:bg-red 
+              className="w-full flex items-center justify-center px-3 py-3 text-base leading-6 font-medium font-font-alt rounded-md text-black text-bold hover:text-white bg-yellow hover:bg-red 
               transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
             >
               Order Now
@@ -74,7 +74,7 @@ const Slider = () => {
                 <img
                   src={item.image}
                   alt="Your Image"
-                  className="object-cover w-44 h-44 p-2"
+                  className="object-cover lg:w-40 lg:h-40 xl:w-44 xl:h-44 p-2"
                 />
               </div>
             );
@@ -85,9 +85,9 @@ const Slider = () => {
         <img
           src={data[currentSlide].image}
           alt="Your Image"
-          className="object-cover w-96 h-96"
+          className="object-cover w-80 h-80 md:w-96 md:h-96"
         />
-        <div className="absolute h-32 w-32 left-[450px] top-1 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 flex items-center justify-center">
+        <div className="absolute h-32 w-32 hidden left-[450px] top-1 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 xl:flex items-center justify-center">
           <p className="text-[20px] text-center font-bold font-font-alt text-white">
             50 % OFF
           </p>

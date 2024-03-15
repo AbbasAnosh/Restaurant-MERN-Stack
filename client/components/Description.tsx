@@ -2,13 +2,13 @@ import React from "react";
 
 const Description = () => {
   return (
-    <div className="flex flex-col h-[calc(100vh-6rem)] justify-around md:h-[calc(100vh-3rem)] items-center ">
+    <div className="flex flex-col md:mt-[6rem] mt-[3rem] mb-[3rem] md:mb-[6rem] h-full lg:justify-around md:h-[calc(100vh-3rem)] items-center ">
       <div>
-        <h1 className="text-yellow text-[64px] leading-[83.2px] tracking-[0.04em] font-font-base capitalize">
+        <h1 className="text-yellow text-[48px] mb-[3rem]  md:text-[64px] leading-[83.2px] tracking-[0.04em] font-font-base capitalize">
           Why our pizza best?
         </h1>
       </div>
-      <div className="flex flex-row items-center gap-[7rem]">
+      <div className="flex flex-col md:flex-row items-center gap-[3rem] lg:gap-[7rem]">
         <div className="flex flex-col gap-24">
           <div className="relative flex flex-col gap-4">
             <h1 className="font-bold text-xl font-font-base">
@@ -33,26 +33,26 @@ const Description = () => {
             </p>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative hidden xl:flex">
           <img
             src="/description/leaf1.png"
             alt=""
-            className="w-24 h-24 absolute"
+            className="w-24 h-24 absolute hidden xl:flex"
           />
           <img
             src="/description/dish.png"
             alt=""
-            className="hover:animate-spin"
+            className="animate-spin hover:animate-none w-80 h-80 lg:w-[30rem] lg:h-[30rem] "
           />
           <img
             src="/description/leaf2.png"
             alt=""
-            className="w-34 h-24 absolute -right-[5rem] top-72 object-contain"
+            className="w-34 h-24 absolute -right-[5rem] top-72 hidden xl:flex object-contain"
           />
           <img
             src="/description/leaf3.png"
             alt=""
-            className="w-52 h-40 absolute top-72 right-34 object-contain"
+            className="w-52 h-40 absolute top-72 right-34 object-contain hidden xl:flex"
           />
         </div>
         <div className="flex flex-col gap-24">

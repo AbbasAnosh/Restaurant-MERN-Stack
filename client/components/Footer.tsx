@@ -6,9 +6,10 @@ import { FaSquareTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="md:h-64 p-4 lg:px-20 xl:px-40 bg-[#212121] text-white flex items-center justify-between">
-      <div className="flex flex-col gap-8">
-        <h1 className="font-bold font-font-base text-xl text-golden">
+    <div className="flex flex-col space-y-5 text-start gap-4 md:flex-row md:gap-4 md:items-center md:justify-between md:h-64 p-4 lg:px-20 xl:px-40 bg-[#212121] text-white">
+      <div className="flex flex-col gap-4">
+        {" "}
+        <h1 className="font-bold font-font-base mb-5 text-xl text-golden">
           Contact Us
         </h1>
         <div className="flex flex-col font-font-alt gap-4 tracking-wider">
@@ -16,28 +17,24 @@ const Footer = () => {
           <p>4039032347</p>
         </div>
       </div>
-      <div className="flex flex-col gap-8 items-center">
-        <div className="font-font-base">
-          <Link
-            href="/"
-            className="font-bold text-2xl tracking-wider text-yellow bg-red-500 px-3 py-2 rounded-lg"
-          >
-            YUMMY
-          </Link>
-        </div>
-        <div className="flex flex-col items-center gap-4 font-font-alt">
-          <p className="font-medium">
-            "The best way to find yourself is to lose yourself in the <br />{" "}
-            service of others"
-          </p>
-          <div className="flex gap-4 text-center text-golden">
-            <FaFacebook />
-            <FaSquareInstagram />
-            <FaSquareTwitter />
-          </div>
+      <div className="flex flex-col items-start gap-4 md:items-center">
+        <Link
+          href="/"
+          className="font-bold text-2xl tracking-wider mb-3 text-yellow bg-red px-3 py-2 rounded-lg"
+        >
+          YUMMY
+        </Link>
+        <p className="font-medium text-wrap">
+          "The best way to find yourself is to lose yourself in the <br />{" "}
+          service of others"
+        </p>
+        <div className="flex gap-4 text-center text-golden">
+          <FaFacebook />
+          <FaSquareInstagram />
+          <FaSquareTwitter />
         </div>
       </div>
-      <div className="">
+      <div className="flex flex-col gap-3">
         <h1 className="text-xl font-bold font-font-base text-golden mb-4 tracking-wider">
           Working Hours
         </h1>
